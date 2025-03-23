@@ -37,7 +37,7 @@ def test_wyszukiwanie(driver):
     results= driver.find_elements("css selector", "h3")  #znalezienie wynikow wyszukiwania
     print("dlugosc listy", len(results))
 
-    assert len(results) > 0, "brak wynikow"
+    assert len(results) > 0, "brak wynikow" #sprawdzenie czy znaleziono jakies wyniki
     driver.quit()  # zamkniecie przegladarki
 
 
