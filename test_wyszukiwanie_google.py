@@ -2,6 +2,7 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
 import pytest
+from selenium.webdriver.common import by
 
 @pytest.fixture
 def driver():
@@ -38,3 +39,5 @@ def test_wyszukiwanie(driver):
 
     assert len(results) > 0, "brak wynikow"
     driver.quit()  # zamkniecie przegladarki
+
+
